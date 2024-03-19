@@ -60,6 +60,7 @@ char* SimpleSerial::convertToBitString(unsigned long long value)
 
 double SimpleSerial::readValuefromScale()
 {
+    Value = -11.11111;
     lpBuffer.clear();
     lpBuffer.push_back("4");
     getReading(io_handler_, 0);
@@ -214,8 +215,8 @@ double SimpleSerial::parsePosition(unsigned long long input)
         //
         unsigned long int res = convert(outptr - 26, 26);
         //double res2 = res * 0.2442 / 1000;                //veroiatno ot kriv vint - greshni rezutati
-        double res2 = res * 0.244140625 / 1000;             //tova e viarnata stoinost
-        printf("POS_%s: %.8fmm\n", SerNo.c_str(), res2);               //actual reading
+        double res2 = res * 0.244140625 / 1000;             //tova e viarnata stoinost.. koito chete pdf
+        //printf("POS_%s: %.8fmm\n", SerNo.c_str(), res2);               //actual reading debug
 
         //printf("\n");
         

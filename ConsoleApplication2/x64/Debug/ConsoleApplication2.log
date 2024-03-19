@@ -1,1 +1,4 @@
-﻿
+﻿  SimpleSerial.cpp
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(280,26): warning C4244: '+=': conversion from 'double' to 'unsigned long', possible loss of data
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(297,22): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  ConsoleApplication2.vcxproj -> C:\Users\i.piskyulev\source\repos\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
