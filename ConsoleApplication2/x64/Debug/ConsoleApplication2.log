@@ -1,4 +1,6 @@
 ﻿  SimpleSerial.cpp
-C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(280,26): warning C4244: '+=': conversion from 'double' to 'unsigned long', possible loss of data
-C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(297,22): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(299,26): warning C4244: '+=': conversion from 'double' to 'unsigned long', possible loss of data
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(316,22): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(389,16): warning C4477: 'printf' : format string '%02d' requires an argument of type 'int', but variadic argument 1 has type 'unsigned __int64'
+C:\Users\i.piskyulev\source\repos\ConsoleApplication2\ConsoleApplication2\SimpleSerial.cpp(389,16): message : consider using '%zd' in the format string
   ConsoleApplication2.vcxproj -> C:\Users\i.piskyulev\source\repos\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
