@@ -123,7 +123,7 @@ HANDLE SimpleSerial::OpenPort(LPCSTR ComPortName)
 
     bool Status = GetCommState(hComm, &dcbSerialParams);
 
-    dcbSerialParams.BaudRate = CBR_115200;          // Setting BaudRate = 9600
+    dcbSerialParams.BaudRate = CBR_256000;          // Setting BaudRate = 9600
     dcbSerialParams.ByteSize = 8;                   // Setting ByteSize = 8
     dcbSerialParams.StopBits = ONESTOPBIT;          // Setting StopBits = 1
     dcbSerialParams.Parity = NOPARITY;              // Setting Parity = None
@@ -373,6 +373,7 @@ int SimpleSerial::getReading(HANDLE hComm, int lineNo)     //line no to get the 
         //    SerialBuffer[i] = TempChar;// Store Tempchar into buffer
         //    i++;
         ///}
+        std::this_thread::sleep_for(std::chrono::microseconds(2));  //fixme
     } while (NoBytesRead > 0);
     SerialBuffer[i] = 0x00;             //End of string
     //printf("OUT:%svgz\n", SerialBuffer);
